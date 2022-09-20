@@ -20,6 +20,10 @@ a{
     padding: 40px 90px;
 }
 
+#navbar img{
+    width: 100%;
+}
+
 .navlinks{
     display: flex;
     gap: 40px;
@@ -287,10 +291,207 @@ a{
     font-weight: none;
 }
 
+.menuIcon{
+    display: none;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(243, 119, 74); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 100px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(247, 160, 129); /* Add a dark-grey background on hover */
+  }
+
 @media screen and (max-width:992px) {
+   .announce_1{
+    width: 50%;
+   }
+
+   .announce_1 h1{
+    font-size: 40px;
+   }
+
+   .announce_1 p, .about_1 p, .about_low p{
+    font-size: 14px;
+   }
    
+   #announce img{
+    width: 50%;
+   }
+
+   .about_1 h1, #test h1, #notify h1{
+    font-size: 30px;
+   }
+
+   .num{
+    padding: 8px 22px;
+   }
+
+   .testBoxes{
+    gap: 30px;
+   }
+
+   .testimony img{
+    width: 57%;
+    height: 100px;
+   }
+
+   .footlist{
+    gap: 90px;
+   }
+
 }
 
 @media screen and (max-width:768px) {
-   
+    #navbar{
+        gap: 15px;
+        padding: 40px 60px;
+    }
+
+    .navlinks{
+        gap: 20px;
+    }
+    
+    .navlinks a{
+        font-size: 11px;
+    }
+
+    .begin{
+        padding: 6px 15px;
+        font-size: 11px;
+    }
+
+    .announce_1 h1, .about_1 h1{
+        font-size: 30px;
+    }
+
+    .announce_1 p, .about_1 p, .about_low p, .testinfo h3{
+        font-size: 12px;
+    }
+
+    .about_2, .footlink_1{
+        gap: 10px;
+    }
+
+    .about_low h3{
+        font-size: 14px;
+    }
+
+    .num{
+        height: 25px;
+        padding: 3px 15px;
+        font-size: 14px;
+    }
+    
+    #announce, #about, #test, #footer{
+        padding: 40px 60px;
+    }
+
+    .about_1 h1, .notify h1{
+        font-size: 25px;
+    }
+
+    .testBoxes{
+        gap: 15px;
+    }
+
+    .testimony img{
+        height: 85px;
+    }
+
+    .testinfo p{
+        font-size: 10px;
+    }
+
+    .begin-2btn, .begin_1{
+        padding: 7px 15px;
+        font-size: 10px;
+    }
+
+    #notify h1{
+        font-size: 20px;
+    }
+
+    .socials{
+        margin-top: 20px;
+    }
+
+    .socials a img{
+        margin: 0 -3px;
+    }
+
+    .footlist{
+        gap: 40px;
+    }
+
+    .footlist_1 a, .footlist_2 a{
+        margin: 5px 0;
+        font-size: 12px;
+    }
+
+    .footlink_1 input{
+        height: 30px;
+    }
+
+    .footlink_1 a{
+        padding: 2px 15px;
+    }
+
+    .footremark p{
+        font-size: 10px;
+        margin-top: 14px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    #navbar{
+        gap: 10px;
+        padding: 40px 20px;
+    }
+
+    .navlinks{
+        gap: 15px;
+    }
+
+    .begin{
+        padding: 5px 10px;
+        font-size: 9px;
+    }
+
+    #announce, #about, #test, #notify, #footer{
+        padding: 40px 20px;
+    }
+    .testimony img{
+        height: 72px;
+    }
+
+    .socials{
+        margin-top: 10px;
+    }
+
+    .socials a{
+        margin: 0 4px;
+    }
+
+    .footlist {
+        gap: 12px;
+    }
+
+    .footlink_1 {
+        gap: 5px;
+    }
+
 }
