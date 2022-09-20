@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAV SECTION */
+
+a{
+    text-decoration: none;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 90px;
+}
+
+.navlinks{
+    display: flex;
+    gap: 40px;
+}
+
+.navlinks a{
+    color: rgb(26, 25, 25);
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.navlinks a:hover{
+    color: rgb(158, 154, 154);
+}
+
+.begin{
+    background-color: rgb(243, 119, 74);
+    color: white;
+    padding: 15px 30px;
+    font-size: 12px;
+    border-radius: 60px;
+}
+
+.begin:hover{
+    background-color: rgb(247, 160, 129);
+}
+
+/* ANNOUNCE SECTION */
+
+#announce{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 90px;
+}
+
+.announce_1 h1{
+    font-size: 60px;
+    color: rgb(54, 56, 68);
+}
+
+.announce_1 p{
+    width: 63%;
+    font-size: 16px;
+    color: rgb(173, 174, 180);
+    padding: 30px 0;
+}
+
+.announce_1 a{
+    margin-top: 20px;
+}
+
+.announce img{
+    width: 40%;
+}
+
+/* ABOUT SECTION */
+
+#about{
+    display: flex;
+    padding: 40px 90px;
+    justify-content: space-between;
+}
+
+.about_1{
+    width: 100%;
+}
+
+.about_1 h1{
+    font-size: 40px;
+    color: rgb(54, 56, 68);
+}
+
+.about_1 p{
+    width: 60%;
+    font-size: 16px;
+    font-weight: lighter;
+    color: rgb(173, 174, 180);
+    padding: 30px 0;
+}
+
+.about_00{
+    width: 100%;
+}
+
+.about_2{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.num{
+    background-color: rgb(243, 119, 74);
+    color: white;
+    padding: 10px 30px;
+    height: 45px;
+    border-radius: 50px;
+}
+
+.about_low h3{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(54, 56, 68);
+}
+
+.about_low p{
+    font-size: 16px;
+    color: rgb(173, 174, 180);
+}
+
+/* TESTIMONIAL SECTION */
+
+#test{
+    padding: 40px 90px;
+    margin-bottom: 50px;
+}
+
+.begin-2btn{
+    text-align: center;
+}
+
+.begin_2{
+    background-color: rgb(243, 119, 74);
+    color: white;
+    padding: 15px 30px;
+    font-size: 12px;
+    border-radius: 60px;
+}
+
+.begin_2:hover{
+    background-color: rgb(247, 160, 129);
+}
+
+#test h1{
+    padding: 30px 0;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(54, 56, 68);
+    font-weight: 400;
+}
+
+.testBoxes{
+    display: grid;
+    gap: 70px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.testinfo h3{
+    font-size: 14px;
+}
+
+.testinfo p{
+    color: rgb(173, 174, 180);
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.testimony{
+    width: 100%;
+
+}
+
+/* NOTIFY SECTION */
+
+#notify{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 90px;
+    background-color: rgb(243, 119, 74);
+    color: white;
+}
+
+#notify h1{
+    font-size: 40px;
+    width: 50%;
+}
+
+.begin_1{
+    background-color: rgb(255, 255, 255);
+    color: rgb(243, 119, 74);
+    padding: 15px 30px;
+    font-size: 12px;
+    border-radius: 60px;
+}
+
+.begin_1:hover{
+    color: rgb(247, 160, 129);
+}
+
+/* FOOTER SECTION */
+
+#footer{
+    background-color: rgb(22, 21, 21);
+    color: white;
+    padding: 40px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials {
+    margin-top: 50px;
+}
+
+.socials a{
+    margin: 0 7px;
+}
+
+.socials a img:hover{
+    color: rgb(247, 160, 129);
+}
+
+.footlist{
+    display: flex;
+    gap: 200px;
+}
+
+.footlist_1 a, .footlist_2 a{
+    display: list-item;
+    margin: 10px 0;
+    list-style: none;
+    color: white;
+    font-size: 14px;
+    font-weight: none;
+}
+
+.footlist_1 a:hover{
+    color: rgb(247, 160, 129);
+}
+
+.footlist_2 a:hover{
+    color: rgb(247, 160, 129);
+}
+
+.footlink_1{
+    display: flex;
+    gap: 20px;
+}
+
+.footlink_1 input{
+    width: 100%;
+    border-radius: 20px;
+    height: 40px;
+}
+
+.footlink_1 a{
+    background-color: rgb(243, 119, 74);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.footlink_1 a:hover{
+    background-color: rgb(247, 160, 129);
+}
+
+.footremark p{
+    color: rgb(145, 131, 131);
+    margin-top: 50px;
+    font-size: 11px;
+    font-weight: none;
+}
+
+@media screen and (max-width:992px) {
+   
+}
+
+@media screen and (max-width:768px) {
+   
+}
