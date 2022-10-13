@@ -187,6 +187,7 @@ a{
 
 .begin-2btn{
     text-align: center;
+    margin-top: 60px;
 }
 
 .begin_2{
@@ -210,9 +211,9 @@ a{
 }
 
 .testBoxes{
-    display: grid;
-    gap: 70px;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    /* gap: 70px;
+    grid-template-columns: repeat(4, 1fr); */
     padding: 40px 0;
     text-align: center;
 }
@@ -229,7 +230,14 @@ a{
 
 .testimony{
     width: 100%;
+    margin: 0 20px;
+}
 
+.testimony img{
+    width: 30%;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* NOTIFY SECTION */
