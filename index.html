@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Manage</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/css/mystylesheet.css">
@@ -16,12 +16,15 @@
             <img src="/images/logo.svg" alt="">
         </a>
 
+        <div class="menuIcon">
+            <i class="ri-menu-fill" onclick="menuOpen()"></i>
+            <i class="ri-close-fill" onclick="menuClose()"></i>
+        </div>
+
         <div class="navlinks">
-            <a href="#">Pricing</a>
             <a href="#">Product</a>
-            <a href="#">About Us</a>
-            <a href="#">Careers</a>
-            <a href="#">Community</a>
+            <a href="#about">About Us</a>
+            <a href="#test">Community</a>
         </div>
 
         <a href="#" class="begin">Get Started</a>
@@ -60,49 +63,37 @@
         <div class="about_00">
 
             <div class="about_2">
-                <h3 class="num">01</h3>
-
                 <div class="about_low">
-                    
+                    <h3 class="num">01</h3>
                     <h3>Track company-wide progress</h3>
-                    
+                </div>    
                     <p>
                         See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone
                         level all the way done to the smallest of details. Never lose sight of the bigger picture again.
                     </p>
-
-                </div>
             </div>
 
             <div class="about_2">
-                <h3 class="num">02</h3>
-
                 <div class="about_low">
-                    
+                    <h3 class="num">02</h3>
                     <h3>Advanced built-in reports</h3>
-                    
+                </div>    
                     <p>
                         Set internal delivery estimates and track progress toward company goals. Our customisable dashboard
                         helps you build out the reports you need to keep key stakeholders informed.
                     </p>
-
-                </div>
             </div>
 
             <div class="about_2">
-                <h3 class="num">03</h3>
-
+                
                 <div class="about_low">
-                    
+                    <h3 class="num">03</h3>
                     <h3>Everything you need in one place</h3>
-                    
-                    <p>
-                        Stop jumping from one service to another to communicate, store files, track tasks and share
-                        documents. Manage offers an all-in-one team productivity solution.
-                    </p>
-
                 </div>
-            
+                <p>
+                    Stop jumping from one service to another to communicate, store files, track tasks and share
+                    documents. Manage offers an all-in-one team productivity solution.
+                </p>
         </div>
     </section>
 
@@ -164,6 +155,7 @@
         <h1>Simplify how your team works today.</h1>
         <a href="#" class="begin_1">Get Started</a>
     </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&UpArrow;</button>
 
     <!-- FOOTER SECTION -->
 
@@ -193,15 +185,15 @@
 
         <div class="footlist">
             <div class="footlist_1">
-                <a href="#">Home</a>
+                <a href="/">Home</a>
                 <a href="#">Pricing</a>
                 <a href="#">Product</a>
-                <a href="#">About Us</a>
+                <a href="#about">About Us</a>
             </div>
 
             <div class="footlist_2">
                 <a href="#">Careers</a>
-                <a href="#">Community</a>
+                <a href="#test">Community</a>
                 <a href="#">Privacy Policy</a>
             </div>
         </div>
@@ -213,8 +205,6 @@
                 <p>&copy; Copyright 2020. All Rights Reserved.</p>
            </div>
     </section>
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top">&UpArrow;</button>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="/js/main.js"></script>

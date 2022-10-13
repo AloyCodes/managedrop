@@ -7,6 +7,20 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root{
+    --Bright-Red: hsl(12, 88%, 59%);
+    --Dark-Blue: hsl(228, 39%, 23%);
+    --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+    --Very-Dark-Blue: hsl(233, 12%, 13%);
+    --Very-Pale-Red: hsl(13, 100%, 96%);;
+    --Vary-Light-Gray: hsl(0, 0%, 98%);
+}
+
+html,body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 /* NAV SECTION */
 
 a{
@@ -30,17 +44,17 @@ a{
 }
 
 .navlinks a{
-    color: rgb(26, 25, 25);
+    color: var(--Very-Dark-Blue);
     font-size: 13px;
     font-weight: lighter;
 }
 
 .navlinks a:hover{
-    color: rgb(158, 154, 154);
+    color: var(--Dark-Grayish-Blue);
 }
 
 .begin{
-    background-color: rgb(243, 119, 74);
+    background-color: var(--Bright-Red);
     color: white;
     padding: 15px 30px;
     font-size: 12px;
@@ -48,7 +62,7 @@ a{
 }
 
 .begin:hover{
-    background-color: rgb(247, 160, 129);
+    background-color: var(--Very-Pale-Red);
 }
 
 /* ANNOUNCE SECTION */
@@ -61,14 +75,14 @@ a{
 }
 
 .announce_1 h1{
-    font-size: 60px;
-    color: rgb(54, 56, 68);
+    font-size: 45px;
+    color: var(--Very-Dark-Blue);
 }
 
 .announce_1 p{
     width: 63%;
     font-size: 16px;
-    color: rgb(173, 174, 180);
+    color: var(--Dark-Grayish-Blue);
     padding: 30px 0;
 }
 
@@ -94,15 +108,15 @@ a{
 
 .about_1 h1{
     font-size: 40px;
-    color: rgb(54, 56, 68);
+    color: var(--Very-Dark-Blue);
 }
 
 .about_1 p{
     width: 60%;
     font-size: 16px;
     font-weight: lighter;
-    color: rgb(173, 174, 180);
-    padding: 30px 0;
+    color: var(--Dark-Grayish-Blue);
+    padding: 20px 0;
 }
 
 .about_00{
@@ -111,28 +125,39 @@ a{
 
 .about_2{
     display: flex;
-    gap: 50px;
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
     padding: 30px 0;
 }
 
 .num{
-    background-color: rgb(243, 119, 74);
+    background-color: var(--Bright-Red);
     color: white;
-    padding: 10px 30px;
-    height: 45px;
+    padding: 5px 20px;
     border-radius: 50px;
+}
+
+.about_low{
+    display: flex;
+    gap: 7px;
+    align-items: center;
 }
 
 .about_low h3{
     font-size: 16px;
     font-weight: bold;
-    color: rgb(54, 56, 68);
+    color: var(--Very-Dark-Blue);
 }
 
-.about_low p{
-    font-size: 16px;
-    color: rgb(173, 174, 180);
+.about_low .num{
+    color: #fff;
+}
+
+.about_2 p{
+    font-size: 13px;
+    color: var(--Dark-Grayish-Blue);
+    margin-left: 3.2rem;
 }
 
 /* TESTIMONIAL SECTION */
@@ -147,7 +172,7 @@ a{
 }
 
 .begin_2{
-    background-color: rgb(243, 119, 74);
+    background-color: var(--Bright-Red);
     color: white;
     padding: 15px 30px;
     font-size: 12px;
@@ -155,14 +180,14 @@ a{
 }
 
 .begin_2:hover{
-    background-color: rgb(247, 160, 129);
+    background-color: var(--Very-Pale-Red);
 }
 
 #test h1{
     padding: 30px 0;
     text-align: center;
     font-size: 40px;
-    color: rgb(54, 56, 68);
+    color: var(--Very-Dark-Blue);
     font-weight: 400;
 }
 
@@ -179,7 +204,7 @@ a{
 }
 
 .testinfo p{
-    color: rgb(173, 174, 180);
+    color: var(--Dark-Grayish-Blue);
     font-size: 12px;
     font-weight: lighter;
 }
@@ -196,7 +221,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 50px 90px;
-    background-color: rgb(243, 119, 74);
+    background-color: var(--Bright-Red);
     color: white;
 }
 
@@ -206,21 +231,21 @@ a{
 }
 
 .begin_1{
-    background-color: rgb(255, 255, 255);
-    color: rgb(243, 119, 74);
+    background-color: var(--Vary-Light-Gray);
+    color: var(--Bright-Red);
     padding: 15px 30px;
     font-size: 12px;
     border-radius: 60px;
 }
 
 .begin_1:hover{
-    color: rgb(247, 160, 129);
+    color: var(--Very-Pale-Red);
 }
 
 /* FOOTER SECTION */
 
 #footer{
-    background-color: rgb(22, 21, 21);
+    background-color: var(--Very-Dark-Blue);
     color: white;
     padding: 40px 90px;
     display: flex;
@@ -237,7 +262,7 @@ a{
 }
 
 .socials a img:hover{
-    color: rgb(247, 160, 129);
+    color: var(--Very-Pale-Red);
 }
 
 .footlist{
@@ -255,11 +280,11 @@ a{
 }
 
 .footlist_1 a:hover{
-    color: rgb(247, 160, 129);
+    color: var(--Bright-Red);
 }
 
 .footlist_2 a:hover{
-    color: rgb(247, 160, 129);
+    color: var(--Bright-Red);
 }
 
 .footlink_1{
@@ -271,28 +296,25 @@ a{
     width: 100%;
     border-radius: 20px;
     height: 40px;
+    border: none;
 }
 
 .footlink_1 a{
-    background-color: rgb(243, 119, 74);
+    background-color: var(--Bright-Red);
     color: white;
     padding: 10px 20px;
     border-radius: 50px;
 }
 
 .footlink_1 a:hover{
-    background-color: rgb(247, 160, 129);
+    background-color: var(--Very-Pale-Red);
 }
 
 .footremark p{
-    color: rgb(145, 131, 131);
+    color: var(--Dark-Grayish-Blue);
     margin-top: 50px;
     font-size: 11px;
     font-weight: none;
-}
-
-.menuIcon{
-    display: none;
 }
 
 #myBtn {
@@ -303,16 +325,17 @@ a{
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: rgb(243, 119, 74); /* Set a background color */
+    background-color: rgb(201, 70, 22);; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 10px; /* Some padding */
-    border-radius: 100px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    padding: 10px 15px; /* Some padding */
+    border-radius: 20px; /*Rounded corners */
+    font-size: 20px; /* Increase font size */
   }
   
   #myBtn:hover {
-    background-color: rgb(247, 160, 129); /* Add a dark-grey background on hover */
+    background-color: var(--Very-Pale-Red); /* Add a dark-grey background on hover */
+    color: var(--Bright-Red);
   }
 
 @media screen and (max-width:992px) {
@@ -336,10 +359,6 @@ a{
     font-size: 30px;
    }
 
-   .num{
-    padding: 8px 22px;
-   }
-
    .testBoxes{
     gap: 30px;
    }
@@ -358,7 +377,7 @@ a{
 @media screen and (max-width:768px) {
     #navbar{
         gap: 15px;
-        padding: 40px 60px;
+        padding: 40px 30px;
     }
 
     .navlinks{
@@ -379,7 +398,7 @@ a{
     }
 
     .announce_1 p, .about_1 p, .about_low p, .testinfo h3{
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .about_2, .footlink_1{
@@ -396,8 +415,8 @@ a{
         font-size: 14px;
     }
     
-    #announce, #about, #test, #footer{
-        padding: 40px 60px;
+    #announce, #about, #test, #footer, #notify{
+        padding: 40px 30px;
     }
 
     .about_1 h1, .notify h1{
@@ -465,17 +484,30 @@ a{
     .navlinks{
         gap: 15px;
     }
-
+    
     .begin{
         padding: 5px 10px;
         font-size: 9px;
     }
 
+    .announce_1 h1, .about_1 h1{
+        font-size: 20px;
+    }
+
     #announce, #about, #test, #notify, #footer{
         padding: 40px 20px;
     }
+
+    .testBoxes{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 0;
+        gap: 35px;
+        text-align: center;
+    }
+
     .testimony img{
-        height: 72px;
+        height: 120px;
+        width: 45%;
     }
 
     .socials{
@@ -486,6 +518,10 @@ a{
         margin: 0 4px;
     }
 
+    #footer {
+        gap: 15px;
+    }
+
     .footlist {
         gap: 12px;
     }
@@ -494,4 +530,173 @@ a{
         gap: 5px;
     }
 
+}
+
+@media screen and (max-width:480px) {
+    #announce {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    #announce img, .announce_1, .announce_1 p, .about_1 p, #notify h1 {
+        width: 100%;
+    }
+
+    .announce_1 h1{
+        font-size: 30px;
+    }
+
+    .begin {
+        padding: 15px 25px;
+        font-size: 11px;
+    }
+
+    .announce_1 p, .testinfo h3 {
+        font-size: 14px;
+    }
+
+    #notify {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #about{
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .about_1{
+        text-align: center;
+    }
+
+    .about_low{
+        background-color: rgba(253, 145, 106, 0.678);
+        border-radius: 50px 0 0 50px;
+    }
+
+    .about_2 p{
+        font-size: 12px;
+        margin-left: 0;
+    }
+
+    #test {
+        padding: 25px 20px;
+    }
+
+    #test h1 {
+        font-size: 40px;
+    }
+
+    .testBoxes{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px 10px;
+    }
+
+    .testimony img {
+        height: 130px;
+        width: 30%;
+    }
+
+    .testinfo p {
+        font-size: 12px;
+    }
+
+    #notify {
+        padding: 35px 20px;
+    }
+
+    #notify h1 {
+        font-size: 20px;
+    }
+
+    .begin_1 {
+        padding: 15px 30px;
+        margin-top: 20px;
+    }
+
+    #footer {
+        padding: 30px 10px;
+        gap: 5px;
+    }
+
+    .socials {
+        float: right;
+        padding-left: 70px;
+        align-content: center;
+        margin: 0px;
+    }
+
+    .socials a img {
+        margin: 0;
+    }
+
+    .footlist {
+        gap: 100px;
+    }
+
+    .footlist_1 a, .footlist_2 a {
+        margin: 10px 0;
+    }
+
+    .footlink_1 {
+        gap: 30px;
+        margin-top: 10px;
+    }
+
+    .footlink_1 input {
+        height: 35px;
+        width: 100%;
+    }
+
+    .footlink_1 a {
+        padding: 5px 25px;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+    #announce, #about, #test, #notify {
+        padding: 10px;
+    } 
+
+    .announce_1 h1, #test h1 {
+        font-size: 20px;
+    }
+
+    .announce_1 p {
+        font-size: 12px;
+    }
+
+    .about_1 h1, #notify h1 {
+        font-size: 18px;
+    }
+
+    .testimony img {
+        height: 105px;
+        width: 30%;
+    }
+
+    .socials {
+        float: none;
+        padding-left: 0px;
+        padding-top: 10px;
+        align-content: center;
+        margin: 0px;
+    }
+
+    .footlist {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .footlink_1 {
+        gap: 10px;
+    }
 }
